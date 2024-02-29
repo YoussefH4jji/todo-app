@@ -66,7 +66,7 @@ export default function Form({input,setInput,todos,setTodos}){
 
             </form>
            
-            <div className='todoos'>
+            {/* <div className='todoos'> */}
                 <div className="timer-music-container">
             <div className="row">
                 <div className="col-md-3">
@@ -101,7 +101,7 @@ export default function Form({input,setInput,todos,setTodos}){
                 </div>
             </div>
             </div>
-            </div>
+            {/* </div> */}
         </section>
     )
 }

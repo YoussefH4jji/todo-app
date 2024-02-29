@@ -521,6 +521,12 @@ label{
   .quote,.author{
     font-size: 1.5rem;
   }
+  .timer-music-container{
+    flex-direction: column;
+  }
+  .timer, .todolist-section{
+    margin-bottom: 2rem;
+  }
 }
 @media (max-width:490px) {
   html{
