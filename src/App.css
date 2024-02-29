@@ -1,0 +1,536 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+#root{
+  --bg-color:#0094FF;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  max-width: 100vw;
+  max-height: 100vh;
+}
+.wrapper {
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(180deg, #04fafd, 5%, #119dff, 50%, #030423);
+  position: absolute;
+  /* border: 1px solid red; */
+  overflow: hidden;
+}
+
+.wrapper div {
+  height: 60px;
+  width: 60px;
+  border: 2px solid rgba(255, 255, 255, 0.7);
+  border-radius: 50px;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  animation: 4s linear infinite;
+}
+div .dot {
+  height: 10px;
+  width: 10px;
+  border-radius: 50px;
+  background: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  top: 20%;
+  right: 20%;
+}
+.wrapper div:nth-child(1) {
+  top: 20%;
+  left: 20%;
+  animation: animate 8s linear infinite;
+}
+.wrapper div:nth-child(2) {
+  top: 60%;
+  left: 80%;
+  animation: animate 10s linear infinite;
+}
+.wrapper div:nth-child(3) {
+  top: 40%;
+  left: 40%;
+  animation: animate 3s linear infinite;
+}
+.wrapper div:nth-child(4) {
+  top: 66%;
+  left: 30%;
+  animation: animate 7s linear infinite;
+}
+.wrapper div:nth-child(5) {
+  top: 90%;
+  left: 10%;
+  animation: animate 9s linear infinite;
+}
+.wrapper div:nth-child(6) {
+  top: 30%;
+  left: 60%;
+  animation: animate 5s linear infinite;
+}
+.wrapper div:nth-child(7) {
+  top: 70%;
+  left: 20%;
+  animation: animate 8s linear infinite;
+}
+.wrapper div:nth-child(8) {
+  top: 75%;
+  left: 60%;
+  animation: animate 10s linear infinite;
+}
+.wrapper div:nth-child(9) {
+  top: 50%;
+  left: 50%;
+  animation: animate 6s linear infinite;
+}
+.wrapper div:nth-child(10) {
+  top: 45%;
+  left: 20%;
+  animation: animate 10s linear infinite;
+}
+.wrapper div:nth-child(11) {
+  top: 10%;
+  left: 90%;
+  animation: animate 9s linear infinite;
+}
+.wrapper div:nth-child(12) {
+  top: 20%;
+  left: 70%;
+  animation: animate 7s linear infinite;
+}
+.wrapper div:nth-child(13) {
+  top: 20%;
+  left: 20%;
+  animation: animate 8s linear infinite;
+}
+.wrapper div:nth-child(14) {
+  top: 60%;
+  left: 5%;
+  animation: animate 6s linear infinite;
+}
+.wrapper div:nth-child(15) {
+  top: 90%;
+  left: 80%;
+  animation: animate 9s linear infinite;
+}
+@keyframes animate {
+  0% {
+    transform: scale(0) translateY(0) rotate(70deg);
+  }
+  100% {
+    transform: scale(1.3) translateY(-100px) rotate(360deg);
+  }
+}
+.main-page{
+  position: relative;
+  color: whitesmoke;
+}
+.title{
+  font-size: 2rem;
+  font-weight: 900;
+  margin-left: 2rem;
+}
+.main-page-title-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15rem;
+  width: fit-content;
+  margin-left: auto;
+  margin-top: 10rem;
+}
+.main-page-title{
+  font-weight: 800;
+  font-size: 3rem;
+}
+.main-page-btn{
+  margin-top: 1rem;
+}
+.btn{
+  margin-left: auto;
+  margin-right: auto;
+  border: none;
+  background-color: var(--bg-color);
+  color: white;
+  padding: .65rem 1rem;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+.btn:hover{
+  background-color:#8C4BDE;
+}
+
+.check-list-img{
+  width: 15rem;
+  margin-top: 15vw;
+}
+.todoList-section{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+.quote-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  padding: 1rem;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+.quote{
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #0304b3;
+  font-style: oblique;
+}
+.author{
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #0304b3;
+}
+form{
+  display: flex;
+  /* flex-direction: row; */
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+}
+.task-input-container{
+  display: flex;
+  
+}
+.task-input{
+  margin-left: auto;
+  width: 20rem;
+  border-radius: .5rem;
+  border: .1rem solid var(--bg-color);
+  padding-left: .5rem;
+  background-color: #C7E8F2;
+  color: darkblue;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+input{
+  border: none;
+}
+.add-task-btn{
+  margin-left: .2rem;
+  border-radius: .5rem;
+}
+li{
+  list-style: none;
+  background-color: var(--bg-color);
+  color: white;
+  padding: .5rem;
+  margin-top: 1rem;
+  border-radius: .5rem;
+  width: 25rem;
+  display: flex;
+  justify-content: space-between;
+  border: 10px solid rebeccapurple;
+  border: none;
+
+}
+.todolist-section{
+  /* margin-top: 1rem; */
+  margin-right: auto;
+  /* margin-left: auto; */
+  /* border: 10px solid green; */
+  border: none;
+  padding: 0;
+  margin-bottom: 0;
+  position: relative
+}
+.todo-list-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+.list{
+  background-color: transparent;
+  color: whitesmoke;
+  font-size: 1.1rem;
+
+}
+.task-btns{
+  border: none;
+  background-color: var(--bg-color);
+  color: whitesmoke;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.completed{
+  /* background-color: #0671BE; */
+  text-decoration: line-through;
+  color: lightgray;
+}
+.delete:hover{
+  color: #FF5B45;
+}
+
+.complete:hover{
+  color: #52E045;
+}
+.timer-section{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 0;
+}
+.timer{
+  margin-right: auto;
+  margin-left: 2rem;
+  /* margin-top: 25vh; */
+}
+.circular-progress-bar{
+  width: 5rem;
+  height: 15rem;
+}
+
+.timer-btns{
+  position: relative;
+  color: white;
+  font-size: 2rem;
+}
+
+
+.settings-button{
+  position: relative;
+  color: white;
+  width: auto;
+  height: auto;
+}
+.settings-btn{
+  width: auto;
+  height: auto;
+  
+}
+.settings-section{
+  position: relative;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+.slider{
+  height: 2.5rem;
+  width: 20rem;
+  border: 1px solid #0094FF;
+  border-radius: 1rem;
+}
+.thumb{
+  cursor: pointer;
+  width:  2.5rem;
+  height:  2.5rem;
+  border-radius: 50%;
+}
+.work .thumb{
+  background-color: #119dff;
+}
+.break{
+  border: 1px solid #8C4BDE;
+}
+.break .thumb{
+  background-color: #8C4BDE;
+}
+label{
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+.return-btn{
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+}
+.play, .pause{
+  cursor: pointer;
+}
+.timer-music-container{
+  /* border: 1px solid red; */
+  width: inherit;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* justify-content: space-around; */
+  /* border: 2px solid yellow; */
+
+  /* margin-top: 2rem; */
+  /* margin-left: 2rem; */
+  /* margin-left: auto; */
+  /* margin-right: auto; */
+}
+.music-section{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  margin-right: 2rem;
+}
+.blackScreen{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(17, 17, 17, 0.2);
+  pointer-events: none;
+  border-radius: 2rem;
+}
+.music-container{
+  position: relative;
+  width: 15rem;
+  height: 20rem;
+  /* padding: 1rem 2rem; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 2rem;
+  box-shadow: 0 0 1rem #8C4BDE,
+  0 0 1rem #0094FF,
+  0 0 1rem #8C4BDE;
+  backdrop-filter: blur(1px);
+}
+.musicPlayer{
+  font-family: "Itim", cursive;
+  color: #8C4BDE;
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+.song-name{
+  font-family: "Itim", cursive;
+  color: #119dff;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+.music-artist-name{
+  color: #119dff;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+  font-family: "Itim", cursive;
+  font-weight: 500;
+}
+.music-timer-div{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  font-weight: 600;
+  padding-left: .5rem;
+  padding-right: .5rem;
+  color: #26a1f8;
+  margin-bottom: 1rem;
+}
+.music-progress-bar{
+  width: 90%;
+  margin-bottom: 1rem;
+  border-radius: 1rem;
+  /* outline: none; */
+  filter: hue-rotate(20deg);
+}
+.play-btn{
+  font-size: 1.4rem;
+  color: #0094FF;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  cursor: pointer;
+}
+.music-controllers{
+  cursor: pointer;
+  font-size: 1.4em;
+  color: #0094FF;
+}
+.controlls-icon, .timer-btns{
+  transition: .5s;
+}
+.controlls-icon:hover{
+  color: white;
+  font-size: 1.5rem;
+}
+.timer-btns:hover{
+  color: var(--bg-color);
+  font-weight: bold;
+
+}
+.todoos{
+  /* display: flex; */
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  margin-top: 2rem;
+  width: 100%;
+}
+
+@media (max-width:1000px) {
+  html{
+    font-size: 90%;
+  }
+}
+@media (max-width:885px) {
+  html{
+    font-size: 80%;
+  }
+}
+@media (max-width:805px) {
+  html{
+    font-size: 75%;
+  }
+}
+@media (max-width:750px) {
+  html{
+    font-size: 65%;
+  }
+}
+@media (max-width:650px) {
+  html{
+    font-size: 60%;
+  }
+}
+@media (max-width:590px) {
+  html{
+    font-size: 50%;
+  }
+}
+@media (max-width:490px) {
+  html{
+    font-size: 45%;
+  }
+}
+@media (max-width:440px) {
+  html{
+    font-size: 40%;
+  }
+}
+@media (max-width:400px) {
+  html{
+    font-size: 30%;
+  }
+  .circular-progress-bar{
+    
+  }
+}
+@media (max-width:300px) {
+  html{
+    font-size: 25%;
+  }
+}
+@media (max-width:265px) {
+  html{
+    font-size: 20%;
+  }
+}
