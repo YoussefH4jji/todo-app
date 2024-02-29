@@ -187,11 +187,12 @@ div .dot {
   margin-right: auto;
 }
 .quote{
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   font-weight: bold;
   margin-bottom: 1rem;
   color: #0304b3;
   font-style: oblique;
+  text-align: center;
 }
 .author{
   font-weight: bold;
@@ -517,6 +518,9 @@ label{
   html{
     font-size: 50%;
   }
+  .quote,.author{
+    font-size: 1.5rem;
+  }
 }
 @media (max-width:490px) {
   html{
@@ -545,6 +549,7 @@ label{
   .main-page-title-container{
     margin-top: 55rem;
   }
+  
 }
 @media (max-width:300px) {
   html{
