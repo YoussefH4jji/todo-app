@@ -12,6 +12,7 @@
   "dependencies": {
     "@alptugidin/react-circular-progress-bar": "^1.1.2",
     "@babel/runtime": "^7.23.9",
+    "bootstrap": "^5.3.3",
     "react": "^18.2.0",
     "react-circular-progressbar": "^2.1.0",
     "react-dom": "^18.2.0",

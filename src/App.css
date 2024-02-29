@@ -237,7 +237,6 @@ li{
   width: 25rem;
   display: flex;
   justify-content: space-between;
-  border: 10px solid rebeccapurple;
   border: none;
 
 }
@@ -245,7 +244,6 @@ li{
   /* margin-top: 1rem; */
   margin-right: auto;
   /* margin-left: auto; */
-  /* border: 10px solid green; */
   border: none;
   padding: 0;
   margin-bottom: 0;
@@ -256,13 +254,12 @@ li{
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
+  margin-top: 0;
 }
 .list{
   background-color: transparent;
   color: whitesmoke;
   font-size: 1.1rem;
-
 }
 .task-btns{
   border: none;
@@ -363,7 +360,7 @@ label{
   display: flex;
   flex-direction: row;
   align-items: center;
-  /* justify-content: space-around; */
+  justify-content: space-around;
   /* border: 2px solid yellow; */
 
   /* margin-top: 2rem; */
@@ -469,21 +466,29 @@ label{
 }
 .todoos{
   /* display: flex; */
-  align-items: center;
+  /* align-items: center; */
   justify-content: space-evenly;
-  flex-direction: column;
+  /* flex-direction: column; */
   margin-top: 2rem;
   width: 100%;
+  /* border: 1px solid yellow; */
 }
 
 @media (max-width:1000px) {
   html{
     font-size: 90%;
   }
+  .check-list-img{
+    width: 20rem;
+  }
 }
 @media (max-width:885px) {
   html{
     font-size: 80%;
+  }
+  .check-list-img{
+    width: 20rem;
+    margin-top: 35vh;
   }
 }
 @media (max-width:805px) {
@@ -495,10 +500,17 @@ label{
   html{
     font-size: 65%;
   }
+  .main-page-title-container{
+    margin-top: 20rem;
+  }
 }
 @media (max-width:650px) {
   html{
     font-size: 60%;
+  }
+  .check-list-img{
+    width: 25rem;
+    margin-top: 35vh;
   }
 }
 @media (max-width:590px) {
@@ -510,6 +522,12 @@ label{
   html{
     font-size: 45%;
   }
+  .main-page-title-container{
+    margin-top: 30rem;
+  }
+  .controlls-icon{
+    font-size: 1.3rem;
+  }
 }
 @media (max-width:440px) {
   html{
@@ -520,8 +538,12 @@ label{
   html{
     font-size: 30%;
   }
-  .circular-progress-bar{
-    
+  .check-list-img{
+    width: 50rem;
+    margin-top: 30vh;
+  }
+  .main-page-title-container{
+    margin-top: 55rem;
   }
 }
 @media (max-width:300px) {
@@ -532,5 +554,9 @@ label{
 @media (max-width:265px) {
   html{
     font-size: 20%;
+  }
+  .check-list-img{
+    width: 50rem;
+    margin-top: 70vh;
   }
 }

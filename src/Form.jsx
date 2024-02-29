@@ -5,7 +5,6 @@ import Timer from "./Timer"
 import Settings from './Settings';
 import SettingsContext from "./SettingsContext";
 import Music from "./Music";
-import Background from "./Backgound";
 export default function Form({input,setInput,todos,setTodos}){
     const [quoteData, setQuoteData]=useState({})
     const [quote, setQuote]=useState("")
@@ -66,9 +65,12 @@ export default function Form({input,setInput,todos,setTodos}){
                 </div>
 
             </form>
+           
             <div className='todoos'>
-            <div className="timer-music-container">
-            <div className="timer">
+                <div className="timer-music-container">
+            <div className="row">
+                <div className="col-md-3">
+                    <div className="timer">
                 <SettingsContext.Provider value={
                    { 
                     showSettings,
@@ -83,9 +85,20 @@ export default function Form({input,setInput,todos,setTodos}){
                     {showSettings ?<Settings/> : <Timer/>}                
                 </SettingsContext.Provider>
             </div>
-            <TodoList todos={todos} setTodos={setTodos} />
-            <div className="music">
+                </div>
+            </div>
+            <div className="row">
+                <div className="col-md-6">
+                <TodoList todos={todos} setTodos={setTodos} />
+
+                </div>
+            </div>
+            <div className="row">
+                <div className="col-md-3">
+                <div className="music">
                 <Music/>
+            </div>
+                </div>
             </div>
             </div>
             </div>
