@@ -22,7 +22,7 @@ export default function TodoList({todos, setTodos}){
         <section className="todolist-section">
             <div className="todo-list-container">
             {todos.map((todo) => (
-                <li className={`todo-lit ${todo.completed? "completed": ""}`} key={todo.id}>
+                <li className={`todo-list ${todo.completed? "completed": ""}`} key={todo.id}>
                 <input
                 type="text"
                 value={todo.title}
