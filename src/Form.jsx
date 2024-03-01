@@ -66,10 +66,10 @@ export default function Form({input,setInput,todos,setTodos}){
 
             </form>
            
-            {/* <div className='todoos'> */}
-                <div className="timer-music-container">
+            <div className='todoos'>
+            <div className="timer-music-container">
             <div className="row">
-                <div className="col-md-3">
+                <div className="col-lg-4">
                     <div className="timer">
                 <SettingsContext.Provider value={
                    { 
@@ -88,20 +88,18 @@ export default function Form({input,setInput,todos,setTodos}){
                 </div>
             </div>
             <div className="row">
-                <div className="col-md-6">
+                <div className="col-lg-4">
                 <TodoList todos={todos} setTodos={setTodos} />
 
                 </div>
             </div>
-            <div className="row">
-                <div className="col-md-3">
-                <div className="music">
+            <div className="col-lg-4">
+            <div className="music">
                 <Music/>
             </div>
-                </div>
             </div>
             </div>
-            {/* </div> */}
+            </div>
         </section>
     )
 }

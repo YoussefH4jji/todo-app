@@ -270,9 +270,8 @@ li{
   cursor: pointer;
 }
 .completed{
-  /* background-color: #0671BE; */
-  text-decoration: line-through;
-  color: lightgray;
+  background-color: green;
+  color: white;
 }
 .delete:hover{
   color: #FF5B45;
@@ -561,13 +560,22 @@ label{
   html{
     font-size: 25%;
   }
+  .main-page-title{
+    font-size: 4rem;
+  }
+  .title{
+    font-size: 6rem;
+  }
+  .main-page-btn{
+    font-size: 3rem;
+  }
 }
 @media (max-width:265px) {
   html{
     font-size: 20%;
   }
   .check-list-img{
-    width: 50rem;
-    margin-top: 70vh;
+    width: 65rem;
+    /* margin-top: 70vh; */
   }
 }

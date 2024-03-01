@@ -22,16 +22,16 @@ export default function TodoList({todos, setTodos}){
         <section className="todolist-section">
             <div className="todo-list-container">
             {todos.map((todo) => (
-                <li className="todo-list" key={todo.id}>
+                <li className={`todo-lit ${todo.completed? "completed": ""}`} key={todo.id}>
                 <input
                 type="text"
                 value={todo.title}
                 className={`list ${todo.completed? "completed": ""}`}
                 onChange={(e) => { e.preventDefault() }}
                 />
-                <div>
-                    <button className="task-btns delete" onClick={()=>handleDelete(todo)}><MdDeleteForever/></button>
-                    <button className="task-btns complete"onClick={()=>handleComplete(todo)}><MdOutlineTaskAlt/></button>
+                <div >
+                    <button className={`task-btns delete ${todo.completed? "completed": ""}`} onClick={()=>handleDelete(todo)}><MdDeleteForever/></button>
+                    <button className={`task-btns compete ${todo.completed? "completed": ""}`}onClick={()=>handleComplete(todo)}><MdOutlineTaskAlt/></button>
                 </div>
 
 
