@@ -10,23 +10,7 @@ function App() {
 
   return (
     <>
-    <div className="wrapper">
-    <div><span className="dot"></span></div>
-    <div><span className="dot"></span></div>
-    <div><span className="dot"></span></div>
-    <div><span className="dot"></span></div>
-    <div><span className="dot"></span></div>
-    <div><span className="dot"></span></div>
-    <div><span className="dot"></span></div>
-    <div><span className="dot"></span></div>
-    <div><span className="dot"></span></div>
-    <div><span className="dot"></span></div>
-    <div><span className="dot"></span></div>
-    <div><span className="dot"></span></div>
-    <div><span className="dot"></span></div>
-    <div><span className="dot"></span></div>
-    <div><span className="dot"></span></div>
-    </div>
+    
     <BrowserRouter>
       <Routes>
         <Route path='/'element={<MainPage/>} />

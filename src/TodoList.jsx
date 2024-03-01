@@ -31,7 +31,7 @@ export default function TodoList({todos, setTodos}){
                 />
                 <div >
                     <button className={`task-btns delete ${todo.completed? "completed": ""}`} onClick={()=>handleDelete(todo)}><MdDeleteForever/></button>
-                    <button className={`task-btns compete ${todo.completed? "completed": ""}`}onClick={()=>handleComplete(todo)}><MdOutlineTaskAlt/></button>
+                    <button className={`task-btns complete ${todo.completed? "completed": ""}`}onClick={()=>handleComplete(todo)}><MdOutlineTaskAlt/></button>
                 </div>
 
 

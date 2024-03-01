@@ -74,13 +74,13 @@ export default function Timer(){
             styles={buildStyles({            
                 textSize: '16px',            
                 pathTransitionDuration: 0.5,
-                pathColor: mode==='work'?'#119dff':'#8C4BDE',
+                pathColor: mode==='work'?'#01406d':'#8C4BDE',
                 textColor: mode==='work'?'white':'#8C4BDE',
                 trailColor: '#d6d6d6',
                 backgroundColor: '#3e98c7',
               })}
               className='circular-progress-bar'
-            />;
+            />
             <div className="timer-btns">
                 {isPaused?
                 <FaCirclePlay className='timer-btns play' onClick={()=>{setIsPaused(false);isPausedRef.current= false}}/>
