@@ -6,7 +6,7 @@ export default function MainPage() {
       <div className="container">
         <div className="row align-items-center">
           <div className="col-md-12">
-            <h1 className="title">Remind.me</h1>
+            <h1 className="title">Remind</h1>
             <div className="main-page-title-container">
               <h2 className="main-page-title">
                 Stay Organized, <br /> Stay Relaxed
