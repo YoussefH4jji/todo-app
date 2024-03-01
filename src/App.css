@@ -538,7 +538,6 @@ label{
   .timer-music-container{
     flex-direction: row;
     /* align-items: baseline; */
-    border: 1px solid yellow;
     justify-content: space-around;
   }
   .timer, .todolist-section{
@@ -546,6 +545,7 @@ label{
   }
   .list,.task-btns {
     font-size: 1.5rem;
+    letter-spacing: 1px;
   }
   .form-todo{
     margin-left: auto;
@@ -553,7 +553,6 @@ label{
     margin-top: 0;
   }
   .timer{
-    border: 1px solid red;
     position: relative;
     /* margin-top: 10rem; */
 
@@ -574,9 +573,7 @@ label{
   }
 }
 @media (max-width:400px) {
-  html{
-    font-size: 30%;
-  }
+  
   
   .main-page-title{
     font-size: 4rem;
@@ -599,16 +596,16 @@ label{
   .music-container{
     font-size: 1.5rem;
     height: 30rem;
-    border: 1px solid red;
   }
   .song-name, .music-artist-name,.controlls-icon{
     font-size: 1.5rem;
   }
+  .controlls-icon,.btn,.timer-btns{
+    font-size: 2rem;
+  }
 }
 @media (max-width:300px) {
-  html{
-    font-size: 25%;
-  }
+  
   .main-page-title{
     font-size: 4rem;
   }
@@ -621,10 +618,13 @@ label{
   .song-name, .music-artist-name,.controlls-icon{
     font-size: 2rem;
   }
+  .quote,.author{
+    font-size: 2rem;
+  }
 }
 @media (max-width:265px) {
   html{
-    font-size: 20%;
+    font-size: 30%;
   }
   .check-list-img{
     width: 65rem;
