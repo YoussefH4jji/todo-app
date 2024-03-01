@@ -127,25 +127,32 @@ div .dot {
 .main-page{
   position: relative;
   color: whitesmoke;
+  /* border: 1px solid red; */
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .title{
   font-size: 2rem;
   font-weight: 900;
   margin-left: 2rem;
+  /* border: 1px solid red; */
+  width: fit-content;
+
 }
 .main-page-title-container{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-right: 15rem;
-  width: fit-content;
-  margin-left: auto;
-  margin-top: 10rem;
+  /* border: 1px solid red; */
+  height: 100%;
 }
 .main-page-title{
   font-weight: 800;
   font-size: 3rem;
+  text-align: center;
 }
 .main-page-btn{
   margin-top: 1rem;
@@ -167,6 +174,8 @@ div .dot {
 .check-list-img{
   width: 15rem;
   margin-top: 15vw;
+  border: 1px solid red;
+
 }
 .todoList-section{
   position: relative;
@@ -481,15 +490,31 @@ label{
   .check-list-img{
     width: 20rem;
   }
+  .title{
+    /* border: 1px solid red; */
+    width: fit-content;
+  }
+  
+  .main-page-title-container{
+    text-align: center;
+    /* border: 1px solid red; */
+    margin-left: auto;
+    margin-right: auto;
+    /* margin: auto; */
+    /* margin-top: 30vh; */
+  }
+  .check-list-img{
+    display: none;
+    /* border: 1px solid red; */
+
+  }
+
 }
 @media (max-width:885px) {
   html{
     font-size: 80%;
   }
-  .check-list-img{
-    width: 20rem;
-    margin-top: 35vh;
-  }
+  
 }
 @media (max-width:805px) {
   html{
@@ -500,18 +525,13 @@ label{
   html{
     font-size: 65%;
   }
-  .main-page-title-container{
-    margin-top: 20rem;
-  }
+  
 }
 @media (max-width:650px) {
   html{
     font-size: 60%;
   }
-  .check-list-img{
-    width: 25rem;
-    margin-top: 35vh;
-  }
+  
 }
 @media (max-width:590px) {
   html{
@@ -531,9 +551,7 @@ label{
   html{
     font-size: 45%;
   }
-  .main-page-title-container{
-    margin-top: 30rem;
-  }
+  
   .controlls-icon{
     font-size: 1.3rem;
   }
@@ -551,8 +569,14 @@ label{
     width: 30rem;
     margin-top: 15vh;
   }
-  .main-page-title-container{
-    margin-top: 40rem;
+  .main-page-title{
+    font-size: 4rem;
+  }
+  .main-page-btn{
+    font-size: 2.5rem;
+  }
+  .title{
+    font-size: 5rem;
   }
   
 }
